@@ -59,7 +59,11 @@
                     object-fit: cover;
                     background-size: cover;
                     transform: scale(1.1);
-                    transition: all 0.6s;
+                    transition: all 0.8s;
+                    -webkit-transition: all 0.8s;
+                    -moz-transition: all 0.8s;
+                    -ms-transition: all 0.8s;
+                    -o-transition: all 0.8s;
                 }
                 .active {
                     opacity: 1;
