@@ -1,0 +1,75 @@
+﻿@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+/* Common xs1, xs2 */
+
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {}
+
+
+/* Common sm1, sm2 tablet */
+
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .Section-01 {
+        padding: 100px;
+        .c-wrapper {
+            padding: 35px 50px;
+            .list-container {
+                position: absolute;
+                z-index: 3;
+                .list {
+                    transition: left 0.25s;
+                    li {
+                        transition: transform 0.5s;
+                        display: table;
+                         :not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+                        a {
+                            font-family: "AlfaSlabOne";
+                            -webkit-text-stroke: 0.2px #ebebeb;
+                            color: black;
+                            letter-spacing: 3px;
+                            font-size: 58px;
+                            transition: color 0.5s;
+                            font-weight: 500;
+                            &:hover {
+                                color: #ebebeb;
+                            }
+                        }
+                        span {
+                            font-size: 7px;
+                            color: white;
+                            position: absolute;
+                            left: -30px;
+                            top: 14px;
+                        }
+                        &:hover {
+                            transform: translatex(35px);
+                        }
+                    }
+                }
+            }
+            .img-container {
+                opacity: 0.5;
+                img {
+                    top: -90px;
+                    left: 100px;
+                    object-fit: cover;
+                    background-size: cover;
+                    transform: scale(1.1);
+                    transition: all 0.6s;
+                }
+                .active {
+                    opacity: 1;
+                    transform: scale(1);
+                    -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+/* Common xs1, xs2 */
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 1320px) {
+  .Section-01 {
+    padding: 100px;
+  }
+  .Section-01 .c-wrapper {
+    padding: 35px 50px;
+  }
+  .Section-01 .c-wrapper .list-container {
+    position: absolute;
+    z-index: 3;
+  }
+  .Section-01 .c-wrapper .list-container .list {
+    transition: left 0.25s;
+  }
+  .Section-01 .c-wrapper .list-container .list li {
+    transition: transform 0.5s;
+    display: table;
+  }
+  .Section-01 .c-wrapper .list-container .list li :not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .Section-01 .c-wrapper .list-container .list li a {
+    font-family: "AlfaSlabOne";
+    -webkit-text-stroke: 0.2px #ebebeb;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 58px;
+    transition: color 0.5s;
+    font-weight: 500;
+  }
+  .Section-01 .c-wrapper .list-container .list li a:hover {
+    color: #ebebeb;
+  }
+  .Section-01 .c-wrapper .list-container .list li span {
+    font-size: 7px;
+    color: white;
+    position: absolute;
+    left: -30px;
+    top: 14px;
+  }
+  .Section-01 .c-wrapper .list-container .list li:hover {
+    transform: translatex(35px);
+  }
+  .Section-01 .c-wrapper .img-container {
+    opacity: 0.5;
+  }
+  .Section-01 .c-wrapper .img-container img {
+    top: -90px;
+    left: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    transform: scale(1.1);
+    transition: all 0.6s;
+  }
+  .Section-01 .c-wrapper .img-container .active {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}/*# sourceMappingURL=Section01.css.map */
